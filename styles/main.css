@@ -1,0 +1,211 @@
+html{
+  scroll-behavior: smooth;
+  scrollbar-width: 1px;
+}
+
+body{
+  margin: 0;
+  background-color: whitesmoke;
+}
+
+#header{
+  position: relative;
+  background-image: url("../img/dots.jpg"); /* The image used */
+  background-color: #cccccc; /* Used if the image is unavailable */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  filter: blur(80%);
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes hi-animation{
+  0% { opacity: 0; transform: scale(0); }
+  85% { opacity: 1; transform: scale(1.2); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes whoami-animation{
+  0% { opacity: 0; margin-top: -1000px;}
+  100% { opacity: 1;  margin-top: -7%;}
+}
+
+#navbar{
+  transform: rotateZ(3deg);
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+  height: 45px;
+  transition: all .4s;
+  z-index: 100;
+  top:0;
+}
+
+#navbar>a{
+  color: white;
+  text-decoration: none;
+  font-size: 2.25vh;
+  width: 120px;
+  font-family: Montserrat;
+  align-self: center;
+  margin-right: 5%;
+  text-align: center;
+  transition: all .3s;
+  z-index: 111;
+}
+
+#navbar>a:hover{
+  transform: translateY(-2px);
+  color: white;
+}
+
+.navtext{
+  opacity: 0;
+  transition: all .4s;
+}
+
+.menu-icon{
+  display: none;
+  position: fixed;
+  z-index: 1;
+  width: 35px;
+  top: 15px;
+  right: 15px;
+  margin: auto;
+}
+
+#neurouz-logo{
+  animation-name: hi-animation;
+  animation-duration: 1s;
+  transition: all .5s;
+  position: absolute;
+  text-align: center;
+  right: 25px;
+  width: 70vh !important;
+  transform: translateY(10%);
+}
+
+#neurouz-logo:hover{
+  transform: scale(1.01);
+  transform: translateY(12%);
+}
+
+#projekti{
+  position: relative;
+  margin: 0 0 10px 0;
+  font-size: 5vw;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: lighter;
+  color: rgb(0, 71, 75);
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+#about-text {
+  font-size: 1.5vw;
+  font-family: "Nixie One";
+  color: whitesmoke;
+  transform: translateY(-20px);
+  font-weight: bold;
+}
+
+.about-dev {
+  font-size: 1.5vw;
+  font-family: "Nixie One";
+  color: whitesmoke;
+  font-weight: bold;
+  transform: translateY(-20px);
+  padding-left: 12px;
+}
+
+.edu-title {
+  color:white;
+  margin-top: 20px;
+  text-align: center; 
+  font-size: 5vw; 
+  font-family: 'Montserrat';
+}
+
+.school-title {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.work-title {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.description {
+  text-align: justify;
+}
+
+.icons {
+  position: absolute;
+  top: 40px;
+  left: 30px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.icons > a > img{
+  width: 30px;
+  opacity: .7;
+}
+
+.icons > a > img:hover{
+  opacity: .9;
+}
+
+.typed-cursor {
+  display: none !important;
+}
+
+.hero {
+  position: absolute;
+  top: 250px;
+  left: 140px;
+}
+
+#about-text-title {
+  font-size: 3vw;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: row;
+}
+
+#work {
+  width: 100%;
+}
+
+.toast-info {
+  margin-bottom: 20px !important;
+  background-color: darkcyan !important;
+  opacity: 1 !important;
+}
+
+.toast-error {
+  margin-bottom: 20px !important;
+  background-color: darkred !important;
+  opacity: 1 !important;
+}
+
+.nav-button {
+  cursor: default !important;
+}
+
+.wandbox-url {
+  transition: none !important;
+  -webkit-transition: none !important;
+}

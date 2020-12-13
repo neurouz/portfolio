@@ -1,0 +1,83 @@
+body{
+    outline: none;
+}
+
+#skills-section{
+    outline: none;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 50%;
+}
+
+.skill{
+    display: flex;
+    width: 95%;
+    flex-direction: column;
+    padding: 10px;
+    justify-self: flex-start;
+    align-self: flex-start;
+    padding-bottom: 50px;
+}
+
+.skill>p{
+    text-align: center;
+    font-size: 20px;
+    font-family: Montserrat;
+    color: rgb(0, 94, 138);
+}
+.skill>img{
+    position: sticky;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    transition: all .3s;
+    padding: 15px;
+    border-bottom: 2px solid rgba(2, 120, 156, 0.25);
+}
+
+.skill>img:hover{
+    transform: scale(1.05);
+}
+
+#together{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+#section2{
+    width: 30%;
+    justify-self: flex-end;
+    margin: auto auto auto auto;
+    font-family: Montserrat;
+    color: grey;
+    border-left: 1px solid lightgray;
+    padding-left: 2%;
+}
+
+#skeelz{
+    display: inline-block;
+    margin: 50px auto 50px 0;
+    position: relative;
+    font-family: "Montserrat";
+    text-align: center;
+    font-size: 5vw;
+    color: rgb(0, 81, 119);
+    width: 50%;
+}
+
+#about{
+    font-family: "Montserrat";
+    text-align: center;
+    font-size: 2vw;
+    color: rgb(0, 81, 119);
+    width: 50%;
+    padding-bottom: 15px;
+    margin: auto;
+}
+
+#about-button{
+    display: block;
+    margin: auto;
+}

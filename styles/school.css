@@ -1,0 +1,109 @@
+#education{
+    display: grid;
+    grid-template-rows: 120px 200px 200px;
+    grid-template-columns: 1fr;
+    width: 100%;
+    margin: 50px auto auto auto;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid lightgray;
+    background-image: url("../img/gradient.jpg");
+    min-height: 520px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.edu-flex{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 2fr 200px;
+    margin: auto;
+    font-family: Montserrat;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: lightgray;
+}
+
+.edu-flex>p{
+    text-align: center;
+}
+
+.edu-flex>img{
+    height: 130px;
+    margin-left: 20%;
+    margin: auto;
+    transform: scale(0.8);
+    opacity: .85;
+}
+.edu-flex>a{
+    margin-right: 10%;
+    background-color: whitesmoke;
+    color: black;
+}
+
+@media (max-width: 650px){
+    .edu-flex>img{
+        transform: scale(0.5);
+        margin: auto;
+    }   
+    .edu-flex{
+        display: grid;
+        grid-template-rows: 1fr 50px 100px;
+        grid-template-columns: 1fr;
+        margin: auto;
+        font-family: Montserrat;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .edu-flex>a{
+        margin: auto;
+    }
+    #education{
+        grid-template-rows: 120px 1fr 1fr;
+    }
+}
+@media (max-width: 1000px){
+    #education{
+        grid-template-rows: 120px 1fr 1fr;
+    }
+}
+@media (max-width: 900px){
+    .edu-flex>img{
+        transform: scale(0.5);
+        margin: auto;
+        margin-bottom: 30px;
+    }   
+    .edu-flex{
+        display: grid;
+        grid-template-rows: 1fr 50px 100px;
+        grid-template-columns: 1fr;
+        margin: auto;
+        font-family: Montserrat;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .edu-flex>a{
+        transform: translateY(20px);
+        width: 50%;
+        margin: auto;
+    }
+
+}
+
+.button {
+    transition: all .3s;
+    background-color: rgba(0,0,0, .04) !important;
+    color: lightgray !important;
+}
+
+.button:hover {
+    background-color: rgba(0,0,0, .1) !important;
+}

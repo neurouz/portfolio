@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:200,400,400i,600,700,800");
+@import url("https://fonts.googleapis.com/css?family=Kaushan+Script");
+
+.blog-card {
+  display: block;
+  position: relative;
+  background: #444;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat !important;
+  width: 700px;
+  max-width: 700px;
+  height: 380px;
+  box-shadow: 4px 8px 28px rgba(39, 44, 49, 0.1), 1px 3px 8px rgba(39, 44, 49, 0.075);
+  overflow: hidden !important;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+.blog-card:hover {
+  box-shadow: 0px 5px 20px rgb(180, 178, 178);
+  transition: all .3s;
+  transform: translateY(-5px);
+}
+.blog-card .content-mask {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.9);
+  width: 61%;
+  height: 100%;
+  padding: 0.75em 0 0.75em 2.5em;
+  overflow: hidden;
+  z-index: 5;
+}
+.blog-card .horizontal {
+  display: inline-block;
+  position: relative;
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(50%, rgba(255, 255, 255, 0.9)), color-stop(0, transparent));
+  background: linear-gradient(to top right, rgba(255, 255, 255, 0.9) 50%, transparent 0);
+  height: 100%;
+  width: 20%;
+  /* top: -5%; */
+  right: 0.6%;
+  overflow: hidden;
+}
+
+.blog-card.python {
+  background-image: url("../img/companies/mainframe.jpg");
+}
+.blog-card.web {
+  background-image: url("../img/companies/machining.jpg");
+}
+
+.content-container {
+  margin-right: -5vw;
+}
+
+.category {
+  display: inline-block;
+  background: #e23f7e;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-align: center;
+  min-width: 45px;
+  border-radius: 5px;
+  box-shadow: 0 0 1px rgba(172, 28, 56, 0.1), 0 2px 6px rgba(172, 28, 56, 0.175);
+  margin: 3vh 2px 2.5vh;
+  padding: 6px 8px;
+  cursor: pointer;
+  z-index: 9;
+}
+.category.python {
+  background: #2a9d5a;
+}
+.category:hover {
+  box-shadow: 0 0 1px rgba(10, 96, 58, 0.2), 0 3px 6px rgba(39, 44, 49, 0.25);
+}
+
+section h1 {
+  background: transparent;
+  color: rgba(0, 0, 0, 0.9);
+  font-family: 'Nunito', 'Open Sans', sans-serif;
+  font-size: 2.5em;
+  font-weight: 800;
+  line-height: 1.2;
+  height: auto;
+  border-bottom: 2px solid rgba(204, 204, 204, 0.75);
+  margin-top: 0;
+  margin-bottom: 0.35em;
+  padding-bottom: 5px;
+}
+
+section p {
+  font-size: 1.1em;
+  line-height: 1.4;
+  width: 100%;
+  margin-top: 0.3em;
+  padding-left: 2px;
+  z-index: 9;
+}
+
+.post-detail {
+  color: rgba(0, 0, 0, 0.55);
+
+  padding-left: 2px;
+  vertical-align: middle;
+}
+.post-detail .icon svg {
+  position: relative;
+  width: 14px;
+  top: -2.25px;
+  margin-right: 7px;
+}
+.post-detail .date {
+  color: rgba(0, 0, 0, 0.65);
+  font-size: 0.85em;
+  margin-top: 5px;
+}
+
+.credit {
+  position: relative;
+  font-family: 'Nunito' Helvetica, sans-serif;
+  font-size: 1.5em;
+  font-weight: 200;
+  text-align: center;
+  bottom: 0.75em;
+  margin-bottom: 10vh;
+}
+.credit .creator-link {
+  color: #000;
+  font-family: "Kaushan Script", "Lato", Helvetica, sans-serif;
+  font-size: 1.05em;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  -webkit-transition: all 300ms linear;
+  transition: all 300ms linear;
+}
+.credit .creator-link:hover {
+  color: #FFF;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+  -webkit-transition: all 350ms linear;
+  transition: all 350ms linear;
+}
+
+.work-section {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.job-description {
+  text-align: justify;
+}
+
+.title, .job-description, .icon, .content-mask > h1, .content-mask > h5 {
+  cursor: default;
+}
+
+@media(max-width: 650px) {
+  .blog-card {
+    transform: scale(.9) !important;
+    height: 450px !important;
+  }
+  .blog-card .horizontal {
+    right: 4.6px;
+  }
+}
+
+@media(max-width: 450px) {
+  .blog-card {
+    height: 520px !important;
+  }
+  .blog-card .horizontal {
+    right: 5px;
+  }
+  .experience{
+    font-size: 30px !important;
+    transform: translateY(20px);
+  }
+  .content-mask > h1 {
+    font-size: 30px !important;
+  }
+}
