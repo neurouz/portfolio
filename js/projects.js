@@ -1,6 +1,5 @@
 function OnlineShop_Show(){
-    toastr["info"]("You can still view and clone the source code.", "Demo is not hosted yet");
-    return;
+    window.open('http://130.211.114.153:3001/', '_blank');
 
     // TODO: Call OnlineShop() function if needed 
 }
