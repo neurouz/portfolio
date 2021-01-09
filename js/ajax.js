@@ -54,7 +54,13 @@ $(function(){
                 onclick: title.concat("_Show()")
             }, "Demo");
 
+
+            if(result.data.id == "306111171"){
+                description = description + "<br />Credentials:<br /><b> Admin : AppAdmin1!<br />User : AppUser1!</b>";
+            }
+
             var infotext = insertElement("p", { class: "project-info" }, description);
+
 
             // Appending elements in card div
             card.appendChild(p);
