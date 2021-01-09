@@ -1,5 +1,5 @@
 function OnlineShop_Show(){
-    window.open('http://130.211.114.153:3001/', '_blank');
+    window.open('http://neurouz.ddns.net:3001/', '_blank');
 
     // TODO: Call OnlineShop() function if needed 
 }
