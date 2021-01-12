@@ -94,6 +94,8 @@ $(function () {
       card.appendChild(last_modified);
       card.appendChild(visit);
       card.appendChild(preview);
+
+      // If project ID is EToolService
       if (result.data.id == "292325199") {
         var div = insertElement("div", {
           style:
@@ -105,6 +107,8 @@ $(function () {
           {
             class: "btn btn-primary project-preview",
             style: "width: 48%; font-size: 12px; color: white",
+            target: "_blank",
+            href: "http://neurouz.ddns.net/downloads/EToolService.Android.zip"
           },
           "<i class='bi bi-download'></i>  Android"
         );
@@ -114,6 +118,8 @@ $(function () {
           {
             class: "btn btn-success project-preview",
             style: "width: 48%; font-size: 12px; color: white",
+            target: "_blank",
+            href: "http://neurouz.ddns.net/downloads/EToolService.Setup.zip"
           },
           "<i class='bi bi-download'></i>  Desktop"
         );
