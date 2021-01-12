@@ -107,7 +107,6 @@ $(function () {
           {
             class: "btn btn-primary project-preview",
             style: "width: 48%; font-size: 12px; color: white",
-            target: "_blank",
             href: "http://neurouz.ddns.net/downloads/EToolService.Android.zip"
           },
           "<i class='bi bi-download'></i>  Android"
@@ -118,7 +117,6 @@ $(function () {
           {
             class: "btn btn-success project-preview",
             style: "width: 48%; font-size: 12px; color: white",
-            target: "_blank",
             href: "http://neurouz.ddns.net/downloads/EToolService.Setup.zip"
           },
           "<i class='bi bi-download'></i>  Desktop"
