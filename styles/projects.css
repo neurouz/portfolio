@@ -1,168 +1,172 @@
-#projects{
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 25% 25% 25%;
-    justify-content: center;
-    grid-gap: 5%;
-    position: relative;
-    height: 450px;
-    background-color: white;
+#projects {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 25% 25% 25%;
+  justify-content: center;
+  grid-gap: 5%;
+  position: relative;
+  height: 450px;
+  background-color: white;
 }
 
-.project-card{
-    cursor: default;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    font-family: "Montserrat";
-    background-color: white;
-    color: rgb(15, 15, 15);
-    box-shadow: 0px 5px 20px rgb(180, 178, 178);
+.project-card {
+  cursor: default;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  font-family: "Montserrat";
+  background-color: white;
+  color: rgb(15, 15, 15);
+  box-shadow: 0px 5px 20px rgb(180, 178, 178);
 }
 
-.project-card:hover{
-    background-color: rgba(255, 255, 255, 0.815);
+.project-card:hover {
+  background-color: rgba(255, 255, 255, 0.815);
 }
 
-.project-image{
-    position: relative;
-    width: 570px;
-    height: 300px;
-    transition: all .3s;
-    opacity: 1;
-    transform: translateX(-10%);
-} 
+.project-image {
+  position: relative;
+  width: 570px;
+  height: 300px;
+  transition: all 0.3s;
+  opacity: 1;
+  transform: translateX(-10%);
+}
 
-.project-title, .project-date{
-    padding-top: 20px;
-    text-align: center;
-    opacity: 1;
-    transform: all .5s;
+.project-title,
+.project-date {
+  padding-top: 20px;
+  text-align: center;
+  opacity: 1;
+  transform: all 0.5s;
 }
 
 .modified-date {
-    text-align: center;
-    transform: all .5s;
-    opacity: 1;
-    margin-top: -10px;
+  text-align: center;
+  transform: all 0.5s;
+  opacity: 1;
+  margin-top: -10px;
 }
 
-.modified-date, .project-date {
-    color: gray;
-    font-size: small;
+.modified-date,
+.project-date {
+  color: gray;
+  font-size: small;
 }
 
-.project-title{
-    transition: all .5s;
-    font-weight: bold;
-    font-size: large;
+.project-title {
+  transition: all 0.5s;
+  font-weight: bold;
+  font-size: large;
 }
 
-.project-link{
-    visibility: hidden;
-    opacity: 0;
-    text-decoration: none;
-    text-align: center;
-    transition: opacity .5s;
-    color: black;
-    background-color: whitesmoke;
-    width: 50%;
-    margin: auto;
-    padding: 10px 0 10px 0;
-    transform: translateY(-260px);
-    border: 1px solid rgb(0, 113, 119);
-    transition: all .2s;
-    border-radius: 4px;
+.project-link {
+  visibility: hidden;
+  opacity: 0;
+  text-decoration: none;
+  text-align: center;
+  transition: opacity 0.5s;
+  color: black;
+  background-color: whitesmoke;
+  width: 50%;
+  margin: auto;
+  padding: 10px 0 10px 0;
+  transform: translateY(-280px);
+  border: 1px solid rgb(0, 113, 119);
+  transition: all 0.2s;
+  border-radius: 4px;
 }
 
 .project-preview {
-    visibility: hidden;
-    opacity: 0;
-    text-decoration: none;
-    text-align: center;
-    transition: opacity .5s;
-    color: black;
-    background-color: whitesmoke;
-    width: 50%;
-    margin: auto;
-    padding: 10px 0 10px 0;
-    transform: translateY(-260px);
-    border: 1px solid rgb(0, 65, 119);
-    transition: all .2s;
-    border-radius: 4px;
-    margin-top: 10px;
+  visibility: hidden;
+  opacity: 0;
+  text-decoration: none;
+  text-align: center;
+  transition: opacity 0.5s;
+  color: black;
+  background-color: whitesmoke;
+  width: 50%;
+  margin: auto;
+  padding: 10px 0 10px 0;
+  transform: translateY(-280px);
+  border: 1px solid rgb(0, 65, 119);
+  transition: all 0.2s;
+  border-radius: 4px;
+  margin-top: 10px;
 }
 
 .project-preview:hover {
-    color: white !important;
+  color: white !important;
 }
 
-.project-card:hover .project-link, .project-card:hover .project-preview{
-    visibility: visible;
-    opacity: 1;
-    cursor: pointer;
+.project-card:hover .project-link,
+.project-card:hover .project-preview {
+  visibility: visible;
+  opacity: 1;
+  cursor: pointer;
 }
 
-.project-link:hover{
-    background-color: rgb(0, 113, 119);
-    color: white;
-    text-decoration: none;
+.project-link:hover {
+  background-color: rgb(0, 113, 119);
+  color: white;
+  text-decoration: none;
 }
 
 .project-preview:hover {
-    background-color: rgb(0, 65, 119);
-    color: white;
-    text-decoration: none;
+  background-color: rgb(0, 65, 119);
+  color: white;
+  text-decoration: none;
 }
 
-.project-card:hover .project-image{
-   opacity: 0.1;
-   transform: translateX(-12%);
+.project-card:hover .project-image {
+  opacity: 0.1;
+  transform: translateX(-12%);
 }
-.project-card:hover .project-title{
-    opacity: 1;
-    color: black;
-    transform: translateY(70px);
-    font-size: 120%;
+.project-card:hover .project-title {
+  opacity: 1;
+  color: black;
+  transform: translateY(70px);
+  font-size: 120%;
 }
-.project-card:hover .project-date, .project-card:hover .modified-date{
-    opacity: 0;
+.project-card:hover .project-date,
+.project-card:hover .modified-date {
+  opacity: 0;
 }
-.project-card:hover .project-info{
-    opacity: 1 !important;
-    visibility: visible;
-    transform: translateY(-240px);
-    color: black !important;
-    font-size: 16px;
+.project-card:hover .project-info {
+  opacity: 1 !important;
+  visibility: visible;
+  transform: translateY(-250px);
+  color: black !important;
+  font-size: 16px;
 }
 
-.project-info{
-    visibility: hidden;
-    opacity: 0;
-    text-align: center;
-    font-family: "Exo", Montserrat;
-    font-weight: 100;
-    padding: 0;
-    transition: transform .5s;
-    padding: 0 20px 0 20px;
+.project-info {
+  visibility: hidden;
+  opacity: 0;
+  text-align: center;
+  font-family: "Exo", Montserrat;
+  font-weight: 100;
+  padding: 0;
+  transition: transform 0.5s;
+  padding: 0 20px 0 20px;
 }
 
 .projects-button {
-    position: relative;
-    width: 40%;
-    margin: auto;
-    border-color: transparent !important;
-    color: gray !important;
+  position: relative;
+  width: 40%;
+  margin: auto;
+  border-color: transparent !important;
+  color: gray !important;
 }
 
 .projects-button:hover {
-    color: black !important;
-    background-color: transparent !important;
+  color: black !important;
+  background-color: transparent !important;
 }
 
 .projects-div {
-    width: 100%;
-    padding-top: 25px;
-    background-color: white;
+  width: 100%;
+  padding-top: 25px;
+  background-color: white;
 }
