@@ -1,3 +1,8 @@
+window.onload = function(){
+    $("#loader").fadeOut(300);
+    
+};
+
 $(function (){
     AOS.init();
 

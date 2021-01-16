@@ -4,9 +4,11 @@ html{
 }
 
 body{
+  left: -500px;
   margin: 0;
   background-color: whitesmoke;
 }
+
 
 #header{
   position: relative;

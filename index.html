@@ -9,7 +9,12 @@
 </head>
 <body>
 
-        <nav id="navbar">
+    <div id="loader" style="display: flex; justify-content: center; align-items: center; position: absolute; width: 100%; height: 100vh;
+     background-color: #212529; z-index: 101;">
+        <img src="./img/rings.svg" alt="loading-animation" style="width: 20%">
+    </div>
+
+        <nav id="navbar" class="body-content">
             <a href="#" class="nav-button"> 
                 <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-house" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
@@ -25,11 +30,11 @@
                 <span class="navtext"> contact </span></a>
         </nav>
     
-        <img src="./img/menu_icon.png" alt="menu-icon" class="menu-icon" id="menuicon"> 
-        <div id="header"> 
+        <img src="./img/menu_icon.png" alt="menu-icon" class="menu-icon body-content" id="menuicon"> 
+        <div id="header" class="body-content"> 
         </div>
     
-        <div class="hero">
+        <div class="hero body-content">
             <p id="about-text-title"><b>A J D I N</b>    H U K A R A</p>
             <div class="hero-text">
                 <p id="about-text">Software developer </p>
@@ -39,17 +44,17 @@
             </div>
         </div>
     
-        <h4 id="projekti">Projects</h4>
-        <div id="projects">
+        <h4 id="projekti" class="body-content">Projects</h4>
+        <div id="projects" class="body-content">
             
         </div>
-        <div class="text-center projects-div">
+        <div class="text-center projects-div body-content">
             <a href="https://github.com/neurouz?tab=repositories" target="_blank" class="btn btn-sm btn-outline-light projects-button">View all projects</a>
         </div>
     
-        <h2 id="skeelz">Skills</h2>
+        <h2 id="skeelz" class="body-content">Skills</h2>
             
-        <div id="together">
+        <div id="together" class="body-content">
         <section id="skills-section">
             <div class="skill" data-aos="flip-right">
                 <p class="skill-name"> HTML/CSS/Javascript </p>
@@ -101,14 +106,14 @@
     </div>
     
     
-        <div class="icons">
+        <div class="icons body-content">
             <a href="https://web.facebook.com/profile.php?id=100017988405018" class="social-icon" target="_blank"> <img src="./img/social-networks/facebook.png" alt="" srcset=""> </a>
             <br>
             <a href="https://github.com/neurouz" class="social-icon" target="_blank"> <img src="./img/social-networks/github.png" alt="" srcset=""> </a>
             <br>
             <a href="https://ba.linkedin.com/in/neurouzz" class="social-icon" target="_blank"> <img src="./img/social-networks/linkedin.png" alt="" srcset=""> </a>
         </div>
-        <div id="education">
+        <div id="education" class="body-content">
             <h5 class="edu-title">Education</h5>
             <div class="edu-flex" data-aos="fade-down" data-aos-offset="250" data-aos-duration="500">
                 <img src="./img/fit-icons/fit-logo-removebg-preview.png" alt="">
@@ -129,7 +134,7 @@
                 <a href="http://smts.edu.ba/" target="_blank" class="btn button" role="button">Visit page</a>    
             </div>
         </div>
-        <div id="console-main">
+        <div id="console-main" class="body-content">
             <div class="console" id="console">
                 <div class="form">
                     <form action="" id="form">
@@ -169,7 +174,7 @@
           </div>
         </div>
     
-        <div id="work">
+        <div id="work" class="body-content">
             <div class="title">
                 <h2 id="skeelz" class="experience">Work experience</h2>            
             </div>
@@ -212,7 +217,7 @@
         </div>
     
     
-        <div class="wrap-contact100">
+        <div class="wrap-contact100 body-content">
             <button class="contact100-btn-hide">
                 <i class="fas fa-times" aria-hidden="true"></i>
             </button>
@@ -255,7 +260,7 @@
         </div>
         <br> <br>
     
-    <footer>
+    <footer class="body-content">
         <div class="row text-center">
           <div class="col-md-4 box">
             <span class="copyright quick-links">Copyright &copy; Ajdin Hukara <script>document.write(new Date().getFullYear())</script>
